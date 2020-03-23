@@ -14,7 +14,7 @@ function App() {
           WARNING: no live and no post event analysis available. Login feature will be available in next version.
         </p>
         <p>
-          Enjoy!!! You are so nice. Life is fun !!!
+          Enjoy!!! You are so nice. Life is fun !!! Retry
         </p>
         <a
           className="App-link"
