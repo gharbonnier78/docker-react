@@ -7,3 +7,16 @@ before_install:
 
 script:
     - docker run -e CI=true gharbonnier/docker-react npm run test -- --coverage
+
+deploy:
+    edge: true
+    provider: elasticbeanstalk
+    region: "us-east-2"
+    app: "docker-react"
+    env: "DockerReact-env"
+    bucket_name: "elasticbeanstalk-us-east-2-164947239064"
+    bucket_path: docker-react"
+    on:
+        branch: master
+    access_key_id: $access_key_id
+    secret_access_key: $secret_access_key
